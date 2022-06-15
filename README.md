@@ -1,0 +1,1 @@
+Goal: Create a GraphQL API using graphene and flask and make it Flask access a PostgreSQL DB
