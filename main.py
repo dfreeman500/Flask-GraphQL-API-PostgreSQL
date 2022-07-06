@@ -1,35 +1,19 @@
-from graphene import ObjectType, Schema, String
+from flask import Flask
+from flask_graphql import GraphQLView
+from schemas import schema
+
+app = Flask(__name__)
 
 
-class Query(ObjectType):
-    hello = String(name=String(default_value="Stranger"),
-                   age=String(default_value="72"))
-    goodbye = String()
-
-    def resolve_hello(root, info, name, age):
-        return f"Hello {name} your age is {age}"
-
-    def resolve_goodbye(root, info):
-        return "Good bye"
+# url rule that takes in graphQL endpoint
+# only need one endpoint
 
 
-schema = Schema(query=Query)
-
-"""
-type Query{
-    hello(name:String="Stranger")
-    goodbye:String
-}
-"""
-
-query_str = "{hello}"
-
-result = schema.execute(query_str)
-
-print(result)
-
-query_with_args = '{hello(name:"Dan",age:"71")}'
-
-result2 = schema.execute(query_with_args)
-
-print(result2)
+app.add_url_rule(
+    "/graphql",
+    view_func=GraphQLView.as_view(
+        "graphql",
+        schema=schema,
+        graphiql=True
+    )
+)
