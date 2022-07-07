@@ -11,9 +11,11 @@ from sqlalchemy import (
 from sqlalchemy.orm import relationship, sessionmaker, scoped_session
 import os
 
-BASE_DIR = os.path.dirname(os.path.realpath(__file__))
+from connection import connection_string
 
-connection_str = "sqlite:///" + os.path.join(BASE_DIR, 'posts.db')
+# BASE_DIR = os.path.dirname(os.path.realpath(__file__))
+
+connection_str = connection_string
 
 Base = declarative_base()
 
