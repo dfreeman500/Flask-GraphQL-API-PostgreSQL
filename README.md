@@ -37,6 +37,7 @@ create virtual environment in gitbash:
 
 
     * create table in db/\_\_init__.py  with classes and use SQLalchemy
+    * connection.py (in .gitignore is has connection string)
     * run create_db.py to create db
     * add objects into db: scripts.py
     * define schema (schemas/\_\_init__.py) based off of data via graphene
