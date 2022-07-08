@@ -44,6 +44,8 @@ create virtual environment in gitbash:
     * create Query (schemas/\_\_init__.py)
     * create Mutations (schemas/\_\_init__.py)
 
+    * add connnection.py to .gitignore
+
 Terminal/GitBash:
 
     * export FLASK_APP=main.py
@@ -52,4 +54,3 @@ Terminal/GitBash:
 
 
 
-#Todo: hook up postgres dB instead of sqlIte

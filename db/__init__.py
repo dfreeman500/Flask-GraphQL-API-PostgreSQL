@@ -9,17 +9,14 @@ from sqlalchemy import (
 
 )
 from sqlalchemy.orm import relationship, sessionmaker, scoped_session
-import os
 
 from connection import connection_string
 
-# BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
-connection_str = connection_string
 
 Base = declarative_base()
 
-engine = create_engine(connection_str, echo=True)
+engine = create_engine(connection_string, echo=True)
 
 
 session = scoped_session(
