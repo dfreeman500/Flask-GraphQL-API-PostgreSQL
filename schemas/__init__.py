@@ -11,7 +11,7 @@ from db import (
 class UserSchema(SQLAlchemyObjectType):
     class Meta:
         model = UserDBModel
-        interfaces = (relay.Node,)
+        interfaces = (relay.Node,) # is tuple
 
 
 class PostSchema(SQLAlchemyObjectType):

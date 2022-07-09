@@ -80,7 +80,7 @@ class Post(Base):
     user_id = Column(Integer(), ForeignKey("users.id"))
 
     def __repr__(self):
-        return f"<User {self.title}>"
+        return f"<Post {self.title}>"
 
 
 #relationship()

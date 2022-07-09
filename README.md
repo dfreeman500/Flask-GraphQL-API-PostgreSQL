@@ -14,6 +14,7 @@ https://www.youtube.com/watch?v=sUw2omk61Gg #Uses sqlite not PostgreSQL
 PostgreSQL
 https://www.w3resource.com/PostgreSQL/postgresql-python-connection.php
 https://www.postgresqltutorial.com/postgresql-python/connect/
+postgresql://[user[:password]@][netloc][:port][/dbname]
 
 SQLAlchemy
 https://docs.sqlalchemy.org/en/14/dialects/postgresql.html
