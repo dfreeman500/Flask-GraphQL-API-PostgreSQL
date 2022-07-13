@@ -30,6 +30,7 @@ print(result)
 
 query_with_args = '{hello(name:"Dan",age:"71")}'
 
+#Executing the Mutation
 result2 = schema.execute(query_with_args)
 
 print(result2)

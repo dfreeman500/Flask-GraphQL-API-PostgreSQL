@@ -19,6 +19,7 @@ postgresql://[user[:password]@][netloc][:port][/dbname]
 SQLAlchemy
 https://docs.sqlalchemy.org/en/14/dialects/postgresql.html
 https://www.compose.com/articles/using-postgresql-through-sqlalchemy/
+https://docs.graphene-python.org/projects/sqlalchemy/en/latest/tutorial/#setup-the-project
 
 
 Graphene

@@ -13,7 +13,7 @@ from sqlalchemy.orm import relationship, sessionmaker, scoped_session
 from connection import connection_string
 
 
-# A base class stores a catlog of classes and mapped tables in the Declarative 
+# A base class stores a catalog of classes and mapped tables in the Declarative 
 # system. This is called as the declarative base class. There will be usually 
 # just one instance of this base in a commonly imported module. The declarative_base() 
 # function is used to create base class.
